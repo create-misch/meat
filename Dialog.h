@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QPushButton>
 
-#include "Mapping.h"
+#include "gui/Mapping.h"
 #include "SingleMotor.h"
 
 class Dialog : public QDialog

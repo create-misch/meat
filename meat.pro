@@ -6,6 +6,20 @@ TEMPLATE = app
 TARGET = meat
 INCLUDEPATH += .
 
+QT += gui widgets
+
 # Input
-HEADERS += Box.h Dialog.h Mapping.h SingleMotor.h
-SOURCES += Box.cpp Dialog.cpp main.cpp Mapping.cpp SingleMotor.cpp
+HEADERS += \
+            Box.h \
+            Dialog.h \
+            gui/Mapping.h \
+            SingleMotor.h \
+    gui/sceneobject.h \
+    gui/drawrsceneobject.h
+SOURCES += main.cpp\
+            Box.cpp \
+            Dialog.cpp \
+            gui/Mapping.cpp \
+            SingleMotor.cpp \
+    gui/sceneobject.cpp \
+    gui/drawrsceneobject.cpp
